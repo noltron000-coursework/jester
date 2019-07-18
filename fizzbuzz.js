@@ -49,15 +49,15 @@ function fizzBuzz(count) {
 	for (let i = 1; i <= count; i += 1) {
 		const str = fizzyBuzzy(i)
 		switch(str) {
-			case FIZZ:
-				result.fizz += 1
-				break
-			case BUZZ:
-				result.buzz += 1
-				break
-			case FIZZBUZZ:
-				result.fizzBuzz += 1
-				break
+		case FIZZ:
+			result.fizz += 1
+			break
+		case BUZZ:
+			result.buzz += 1
+			break
+		case FIZZBUZZ:
+			result.fizzBuzz += 1
+			break
 		}
 	}
 	return result
