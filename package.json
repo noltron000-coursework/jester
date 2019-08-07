@@ -1,10 +1,15 @@
 {
 	"scripts": {
+		"build": "tsc *.ts ; npm run minify",
+		"minify": "uglifyjs fizzbuzz.js -c -m -o fizzbuzz.js ; uglifyjs fizzbuzz.test.js -c -m -o fizzbuzz.test.js",
 		"test": "jest",
-		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
-
+		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
 	},
 	"devDependencies": {
-		"coveralls": "^3.0.5"
+		"@types/jest": "^24.0.17",
+		"coveralls": "^3.0.5",
+		"jest": "^24.8.0",
+		"ts-jest": "^24.0.2",
+		"uglify-js": "^3.6.0"
 	}
 }
