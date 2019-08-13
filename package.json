@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"build": "tsc *.ts ; npm run minify",
+		"build": "tsc *.ts ; npm run minify ; jest test",
 		"minify": "uglifyjs fizzbuzz.js -c -m -o fizzbuzz.js ; uglifyjs fizzbuzz.test.js -c -m -o fizzbuzz.test.js",
 		"test": "jest",
 		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
